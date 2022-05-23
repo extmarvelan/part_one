@@ -84,16 +84,16 @@ curl --location --request GET 'localhost:8080/preferences'
 ## Pregunta URL de redirección
 
 > #### ¿Qué son los datos que vuelven en la URL de retorno? Definir cada uno.
-> collection_id: Es el id del pago generado al momento de la redirección
-> collection_status: Es el estado generado del pago generado al momento de la redirección
-> payment_id: Es el identificador único del pago.
-> status: Es el estado temporal del pago
-> external_reference: Identificador único que envía el vendedor para relacionar el payment_id generado por mercado pago, con el ID de tu sistema.
-> payment_type: Tipo del medio de pago elegido
-> merchant_order_id: El ID de la orden de Pago. 
-> preference_id: El ID de la preferencia de Pago.
-> site_id: País donde
-> processing_mode: Modo de procesamiento. Existen dos tipos:
-> Aggregator: El merchant utilizará los códigos de comercio de Mercado Pago y aprovechará las ventajas financieras que ofrecemos.
-> Gateway: Para el merchant es necesario tener sus propios códigos de comercio para ventas online y tener convenio con cada uno de los medios de pago deseados.
-> merchant_account_id: ID del código de comercio (merchant account ID).
+> - collection_id: Es el id del pago generado al momento de la redirección
+> - collection_status: Es el estado generado del pago generado al momento de la redirección
+> - payment_id: Es el identificador único del pago.
+> - status: Es el estado temporal del pago
+> - external_reference: Identificador único que envía el vendedor para relacionar el payment_id generado por mercado pago, con el ID de tu sistema.
+> - payment_type: Tipo del medio de pago elegido
+> - merchant_order_id: El ID de la orden de Pago. 
+> - preference_id: El ID de la preferencia de Pago.
+> - site_id: País donde
+> - processing_mode: Modo de procesamiento. Existen dos tipos:
+> -- Aggregator: El merchant utilizará los códigos de comercio de Mercado Pago y aprovechará las ventajas financieras que ofrecemos.
+> -- Gateway: Para el merchant es necesario tener sus propios códigos de comercio para ventas online y tener convenio con cada uno de los medios de pago deseados.
+> - merchant_account_id: ID del código de comercio (merchant account ID).
