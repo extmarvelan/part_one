@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>MercadoPago Button</title>
+</head>
+
+<body>
+    <div class="cho-container"></div>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script>
+        const mp = new MercadoPago('TEST-fe4f7a39-4360-4aba-b943-37ba60b6514f', {
+            locale: 'es-AR'
+        });
+        const checkout = mp.checkout({
+            preference: {
+                id: '1125572561-9c00ea14-0398-45f2-903b-aad76d258d26'
+            },
+            render: {
+                container: '.cho-container',
+                label: 'Pagar',
+            }
+        });
+    </script>
+</body>
+</html>
