@@ -2,7 +2,7 @@
 
 [![N|Solid](https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.7/mercadopago/logo__large@2x.png)](https://www.mercadopago.com.ar/)
 
-##Creación de una Preferencia
+## Creación de una Preferencia
 ```sh
 curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Authorization: Bearer <TOKEN>' \
